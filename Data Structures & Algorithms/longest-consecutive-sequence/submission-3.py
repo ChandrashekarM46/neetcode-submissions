@@ -7,7 +7,7 @@ class Solution:
                 l=1
                 while num+l in nums_set:
                     l+=1
-            maxl=max(l,maxl)
+                maxl=max(l,maxl)
         
         return maxl
 

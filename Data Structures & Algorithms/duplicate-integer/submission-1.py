@@ -1,8 +1,8 @@
 class Solution:
     def hasDuplicate(self, nums: List[int]) -> bool:
-        mp={}
+        seen=set()
         for num in nums:
-            mp[num] = mp.get(num,0)+1
-            if mp[num] > 1:
+            if num in seen:
                 return True
+            seen.add(num)
         return False
